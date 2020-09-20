@@ -1,0 +1,220 @@
+aniruthsivakumar@Aniruths-MacBook-Pro Desktop % git clone https://github.com/anireut/GitBranchingAssignment.git
+Cloning into 'GitBranchingAssignment'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git branch feature-A
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-A
+Switched to branch 'feature-A'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch A"
+On branch feature-A
+nothing to commit, working tree clean
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch A"
+On branch feature-A
+nothing to commit, working tree clean
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % ls
+README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md         
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch A"
+On branch feature-A
+Changes not staged for commit:
+	modified:   README.md
+
+no changes added to commit
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % add .
+zsh: command not found: add
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch A"
+[feature-A 44fc8cf] 1st Commit to Branch A
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "2nd Commit to Branch A"
+[feature-A e3a44d2] 2nd Commit to Branch A
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "3rd Commit to Branch A"
+[feature-A 961cb71] 3rd Commit to Branch A
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout master                  
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git git merge feature-A
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-A 
+Updating 1c23ee4..961cb71
+Fast-forward
+ README.md | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git branch feature-B
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git branch feature-C
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-C
+Switched to branch 'feature-C'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch C"
+[feature-C cd584d2] 1st Commit to Branch C
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-C                 
+Already on 'feature-C'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "2nd Commit to Branch C"
+[feature-C 518ef56] 2nd Commit to Branch C
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "3rd Commit to Branch C"
+[feature-C 1d47282] 3rd Commit to Branch C
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-B
+Switched to branch 'feature-B'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch B"
+[feature-B de71316] 1st Commit to Branch B
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "2nd Commit to Branch B"
+[feature-B f037966] 2nd Commit to Branch B
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % checkout feature-A
+zsh: command not found: checkout
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-A
+Switched to branch 'feature-A'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-B
+Updating 961cb71..f037966
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-C
+Switched to branch 'feature-C'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "4th Commit to Branch C"
+[feature-C db62cc4] 4th Commit to Branch C
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                          
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "5th Commit to Branch C"
+[feature-C 17ec3c7] 5th Commit to Branch C
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-B
+Switched to branch 'feature-B'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git branch master
+fatal: A branch named 'master' already exists.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+	README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "3rd Commit to Branch B"
+[feature-B b7722bd] 3rd Commit to Branch B
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git push
+Username for 'https://github.com': ^C
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout master
+Already on 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-C
+Updating 961cb71..17ec3c7
+Fast-forward
+ README.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git push
+Username for 'https://github.com': anireut
+Password for 'https://anireut@github.com': 
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (24/24), 1.97 KiB | 1010.00 KiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0)
+To https://github.com/anireut/GitBranchingAssignment.git
+   1c23ee4..17ec3c7  master -> master
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-A
+Switched to branch 'feature-A'
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim feature-A
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % ls
+README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                              
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "1st Commit to Branch A.1" 
+[feature-A e8254e1] 1st Commit to Branch A.1
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                            
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                                
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "2nd Commit to Branch A.1"
+[feature-A a6f3e38] 2nd Commit to Branch A.1
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % vim README.md                            
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git add .                                
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git commit -m  "3rd Commit to Branch A.1"
+[feature-A fe00b2f] 3rd Commit to Branch A.1
+ 1 file changed, 1 insertion(+)
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-A
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-C
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-A
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git merge feature-B
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % ls
+README.md
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % cat README.md
+# GitBranchingAssignment
+1
+2
+3
+<<<<<<< HEAD
+C1
+C2
+C3
+C4
+C5
+=======
+B1
+B2
+A1
+A2
+A3
+>>>>>>> feature-A
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git push
+Everything up-to-date
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % checkout Master
+zsh: command not found: checkout
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git checkout feature-A
+README.md: needs merge
+error: you need to resolve your current index first
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % git push
+Everything up-to-date
+aniruthsivakumar@Aniruths-MacBook-Pro GitBranchingAssignment % 
